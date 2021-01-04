@@ -1,0 +1,678 @@
+/* Common style */
+.grid {
+	margin:0 auto 840px ;
+	width: 100%;
+
+}
+
+.grid a {
+	float: left;
+	max-width: 1000px;
+	width: 50%;
+	color: #333;
+}
+
+.weba img{width: 250px; height: 800px;}
+
+.grid h3{font-size: 30px;font-family:'Bungee', cursive; padding: 120px 0 10px;}
+
+
+.grid figure {
+	
+	position: relative;
+	overflow: hidden;
+	margin: 10px;
+	background: #333;
+}
+
+.aea img {
+	position: relative;
+	display: block;
+	width: 100%;
+	opacity: 0.7;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s; 
+	transition: all 1s;
+	height: 400px;
+}
+
+/* .grid figure img {
+	position: relative;
+	display: block;
+	width: 100%;
+	opacity: 0.7;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s; 
+	transition: all 1s;
+} */
+
+/* .demo-2 .grid a:hover img{transform: scale(1.1);} */
+
+/* Common style */
+#grid{padding-bottom: 100px;}
+.grid figcaption {
+	position: absolute;
+	top: 0;
+	z-index: 11;
+	padding: 10px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.grid figcaption h2 {
+	margin: 0 0 20px 0;
+	color: #3498db;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 300;
+	font-size: 130%;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.grid figcaption p {
+	padding: 0 20px;
+	color: #aaa;
+	font-weight: 300;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+}
+
+.grid figcaption h2,
+.grid figcaption p {
+	-webkit-transform: translateY(50px);
+	transform: translateY(50px);
+}
+
+.grid figure button {
+	position: absolute;
+	padding: 4px 20px;
+	border: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+}
+
+.grid figcaption,
+.grid figcaption h2,
+.grid figcaption p,
+.grid figure button {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+/* Style for SVG */
+.grid svg {
+	position: absolute;
+	top: -1px; /* fixes rendering issue in FF */
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+}
+
+.grid svg path {
+	fill: #fff;
+}
+
+/* Hover effects */
+.grid a:hover figure img { 
+	opacity: 1;
+}
+
+.grid a:hover figcaption h2,
+.grid a:hover figcaption p {
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+.grid a:hover figcaption p {
+	opacity: 0;
+}
+
+/* Individual styles */
+
+
+
+.demo-1 .grid figure button,
+.demo-3 .grid figure button {
+	top: 50%;
+	left: 50%;
+	border: 3px solid #fff;
+	background: transparent;
+	color: #fff;
+	opacity: 0;
+	-webkit-transform: translateY(-50%) translateX(-50%) scale(0.25);
+	transform: translateY(-50%) translateX(-50%) scale(0.25);
+}
+
+.demo-1 .grid a:hover figure button,
+.demo-3 .grid a:hover figure button {
+	opacity: 1;
+	-webkit-transform: translateY(-50%) translateX(-50%) scale(1);
+	transform: translateY(-50%) translateX(-50%) scale(1);
+}
+
+
+.demo-2 .grid figcaption p {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+.demo-2 .grid figure button {
+	bottom: 0;
+	left: 0;
+	padding: 15px;
+	width: 100%;
+	background: #fff;
+	color: #333;
+	font-weight: 300;
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
+}
+
+.demo-2 .grid a:hover figure button {
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+.demo-2 .grid figcaption h2, 
+.demo-2 .grid figcaption p,
+.demo-3 .grid figcaption h2,
+.demo-3 .grid figcaption p {
+	-webkit-transition-timing-function: cubic-bezier(0.250, 0.250, 0.115, 1); /* older webkit */
+	-webkit-transition-timing-function: cubic-bezier(0.250, 0.250, 0.115, 1.445);
+	timing-function: cubic-bezier(0.250, 0.250, 0.115, 1.445);
+}
+
+.demo-2 .grid a:hover figcaption p,
+.demo-3 .grid a:hover figcaption p {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+	-webkit-transition-duration: 0.1s;
+	transition-duration: 0.1s;
+}
+
+
+.demo-3 .grid a:hover figcaption h2 {
+	-webkit-transform: translateY(5px);
+	transform: translateY(5px);
+}
+
+
+
+
+
+
+
+.bar[aria-valuenow='1'] .percentage:before {width: 1%;}
+.bar[aria-valuenow='2'] .percentage:before {width: 2%;}
+.bar[aria-valuenow='3'] .percentage:before { width: 3%;}
+.bar[aria-valuenow='4'] .percentage:before { width: 4%;}
+.bar[aria-valuenow='5'] .percentage:before { width: 5%;}
+.bar[aria-valuenow='6'] .percentage:before { width: 6%;}
+.bar[aria-valuenow='7'] .percentage:before { width: 7%;}
+.bar[aria-valuenow='8'] .percentage:before { width: 8%;}
+.bar[aria-valuenow='9'] .percentage:before { width: 9%;}
+.bar[aria-valuenow='10'] .percentage:before { width: 10%;}
+.bar[aria-valuenow='11'] .percentage:before { width: 11%;}
+.bar[aria-valuenow='12'] .percentage:before { width: 12%;}
+.bar[aria-valuenow='13'] .percentage:before { width: 13%;}
+.bar[aria-valuenow='14'] .percentage:before { width: 14%;}
+.bar[aria-valuenow='15'] .percentage:before { width: 15%;}
+.bar[aria-valuenow='16'] .percentage:before { width: 16%;}
+.bar[aria-valuenow='17'] .percentage:before { width: 17%;}
+.bar[aria-valuenow='18'] .percentage:before { width: 18%;}
+.bar[aria-valuenow='19'] .percentage:before { width: 19%;}
+.bar[aria-valuenow='20'] .percentage:before { width: 20%;}
+.bar[aria-valuenow='21'] .percentage:before { width: 21%;}
+.bar[aria-valuenow='22'] .percentage:before { width: 22%;}
+.bar[aria-valuenow='23'] .percentage:before { width: 23%;}
+.bar[aria-valuenow='24'] .percentage:before { width: 24%;}
+.bar[aria-valuenow='25'] .percentage:before { width: 25%;}
+.bar[aria-valuenow='26'] .percentage:before { width: 26%;}
+.bar[aria-valuenow='27'] .percentage:before { width: 27%;}
+.bar[aria-valuenow='28'] .percentage:before { width: 28%;}
+.bar[aria-valuenow='29'] .percentage:before { width: 29%;}
+.bar[aria-valuenow='30'] .percentage:before { width: 30%;}
+.bar[aria-valuenow='31'] .percentage:before { width: 31%;}
+.bar[aria-valuenow='32'] .percentage:before { width: 32%;}
+.bar[aria-valuenow='33'] .percentage:before { width: 33%;}
+.bar[aria-valuenow='34'] .percentage:before { width: 34%;}
+.bar[aria-valuenow='35'] .percentage:before { width: 35%;}
+.bar[aria-valuenow='36'] .percentage:before { width: 36%;}
+.bar[aria-valuenow='37'] .percentage:before { width: 37%;}
+.bar[aria-valuenow='38'] .percentage:before { width: 38%;}
+.bar[aria-valuenow='39'] .percentage:before { width: 39%;}
+.bar[aria-valuenow='40'] .percentage:before { width: 40%;}
+.bar[aria-valuenow='41'] .percentage:before { width: 41%;}
+.bar[aria-valuenow='42'] .percentage:before { width: 42%;}
+.bar[aria-valuenow='43'] .percentage:before { width: 43%;}
+.bar[aria-valuenow='44'] .percentage:before { width: 44%;}
+.bar[aria-valuenow='45'] .percentage:before { width: 45%;}
+.bar[aria-valuenow='46'] .percentage:before { width: 46%;}
+.bar[aria-valuenow='47'] .percentage:before { width: 47%;}
+.bar[aria-valuenow='48'] .percentage:before { width: 48%;}
+.bar[aria-valuenow='49'] .percentage:before { width: 49%;}
+.bar[aria-valuenow='50'] .percentage:before { width: 50%;}
+.bar[aria-valuenow='51'] .percentage:before { width: 51%;}
+.bar[aria-valuenow='52'] .percentage:before { width: 52%;}
+.bar[aria-valuenow='53'] .percentage:before { width: 53%;}
+.bar[aria-valuenow='54'] .percentage:before { width: 54%;}
+.bar[aria-valuenow='55'] .percentage:before { width: 55%;}
+.bar[aria-valuenow='56'] .percentage:before { width: 56%;}
+.bar[aria-valuenow='57'] .percentage:before { width: 57%;}
+.bar[aria-valuenow='58'] .percentage:before { width: 58%;}
+.bar[aria-valuenow='59'] .percentage:before { width: 59%;}
+.bar[aria-valuenow='60'] .percentage:before { width: 60%;}
+.bar[aria-valuenow='61'] .percentage:before { width: 61%;}
+.bar[aria-valuenow='62'] .percentage:before { width: 62%;}
+.bar[aria-valuenow='63'] .percentage:before { width: 63%;}
+.bar[aria-valuenow='64'] .percentage:before { width: 64%;}
+.bar[aria-valuenow='65'] .percentage:before { width: 65%;}
+.bar[aria-valuenow='66'] .percentage:before { width: 66%;}
+.bar[aria-valuenow='67'] .percentage:before { width: 67%;}
+.bar[aria-valuenow='68'] .percentage:before { width: 68%;}
+.bar[aria-valuenow='69'] .percentage:before {width: 69%;}
+.bar[aria-valuenow='70'] .percentage:before { width: 70%;}
+.bar[aria-valuenow='71'] .percentage:before { width: 71%;}
+.bar[aria-valuenow='72'] .percentage:before { width: 72%;}
+.bar[aria-valuenow='73'] .percentage:before { width: 73%;}
+.bar[aria-valuenow='74'] .percentage:before { width: 74%;}
+.bar[aria-valuenow='75'] .percentage:before { width: 75%;}
+.bar[aria-valuenow='76'] .percentage:before { width: 76%;}
+.bar[aria-valuenow='77'] .percentage:before { width: 77%;}
+.bar[aria-valuenow='78'] .percentage:before { width: 78%;}
+.bar[aria-valuenow='79'] .percentage:before { width: 79%;}
+.bar[aria-valuenow='80'] .percentage:before { width: 80%;}
+.bar[aria-valuenow='81'] .percentage:before { width: 81%;}
+.bar[aria-valuenow='82'] .percentage:before { width: 82%;}
+.bar[aria-valuenow='83'] .percentage:before { width: 83%;}
+.bar[aria-valuenow='84'] .percentage:before { width: 84%;}
+.bar[aria-valuenow='85'] .percentage:before { width: 85%;}
+.bar[aria-valuenow='86'] .percentage:before { width: 86%;}
+.bar[aria-valuenow='87'] .percentage:before {width: 87%;}
+.bar[aria-valuenow='88'] .percentage:before {width: 88%;}
+.bar[aria-valuenow='89'] .percentage:before {width: 89%;}
+.bar[aria-valuenow='90'] .percentage:before {width: 90%;}
+.bar[aria-valuenow='91'] .percentage:before {width: 91%;}
+.bar[aria-valuenow='92'] .percentage:before {width: 92%;}
+.bar[aria-valuenow='93'] .percentage:before {width: 93%;}
+.bar[aria-valuenow='94'] .percentage:before {width: 94%;}
+.bar[aria-valuenow='95'] .percentage:before {width: 95%;}
+.bar[aria-valuenow='96'] .percentage:before {width: 96%;}
+.bar[aria-valuenow='97'] .percentage:before {width: 97%;}
+.bar[aria-valuenow='98'] .percentage:before {width: 98%;}
+.bar[aria-valuenow='99'] .percentage:before {width: 99%;}
+.bar[aria-valuenow='100'] .percentage:before{width: 100%;}
+
+
+  .bar[aria-valuenow='10'] .tooltip {
+	left: 10%;}
+  .bar[aria-valuenow='10'] .tooltip:before {
+	content: "0%";}
+  .bar[aria-valuenow='11'] .tooltip {
+	left: 11%;}
+  .bar[aria-valuenow='11'] .tooltip:before {
+	content: "11%";}
+  .bar[aria-valuenow='12'] .tooltip {
+	left: 12%;}
+  .bar[aria-valuenow='12'] .tooltip:before {
+	content: "12%";}
+  .bar[aria-valuenow='13'] .tooltip {
+	left: 13%;}
+  .bar[aria-valuenow='13'] .tooltip:before {
+	content: "13%";}
+  .bar[aria-valuenow='14'] .tooltip {
+	left: 14%;}
+  .bar[aria-valuenow='14'] .tooltip:before {
+	content: "14%";}
+  .bar[aria-valuenow='15'] .tooltip {
+	left: 15%;}
+  .bar[aria-valuenow='15'] .tooltip:before {
+	content: "15%";}
+  .bar[aria-valuenow='16'] .tooltip {
+	left: 16%;}
+  .bar[aria-valuenow='16'] .tooltip:before {
+	content: "16%";}
+  .bar[aria-valuenow='17'] .tooltip {
+	left: 17%;}
+  .bar[aria-valuenow='17'] .tooltip:before {
+	content: "17%";}
+  .bar[aria-valuenow='18'] .tooltip {
+	left: 18%;}
+  .bar[aria-valuenow='18'] .tooltip:before {
+	content: "18%";}
+  .bar[aria-valuenow='19'] .tooltip {
+	left: 19%;}
+  .bar[aria-valuenow='19'] .tooltip:before {
+	content: "19%";}
+  .bar[aria-valuenow='20'] .tooltip {
+	left: 20%;}
+  .bar[aria-valuenow='20'] .tooltip:before {
+	content: "20%";}
+  .bar[aria-valuenow='21'] .tooltip {
+	left: 21%;}
+  .bar[aria-valuenow='21'] .tooltip:before {
+	content: "21%";}
+  .bar[aria-valuenow='22'] .tooltip {
+	left: 22%;}
+  .bar[aria-valuenow='22'] .tooltip:before {
+	content: "22%";}
+  .bar[aria-valuenow='23'] .tooltip {
+	left: 23%;}
+  .bar[aria-valuenow='23'] .tooltip:before {
+	content: "23%";}
+  .bar[aria-valuenow='24'] .tooltip {
+	left: 24%;}
+  .bar[aria-valuenow='24'] .tooltip:before {
+	content: "24%";}
+  .bar[aria-valuenow='25'] .tooltip {
+	left: 25%;}
+  .bar[aria-valuenow='25'] .tooltip:before {
+	content: "25%";}
+  .bar[aria-valuenow='26'] .tooltip {
+	left: 26%;}
+  .bar[aria-valuenow='26'] .tooltip:before {
+	content: "26%";}
+  .bar[aria-valuenow='27'] .tooltip {
+	left: 27%;}
+  .bar[aria-valuenow='27'] .tooltip:before {
+	content: "27%";}
+  .bar[aria-valuenow='28'] .tooltip {
+	left: 28%;}
+  .bar[aria-valuenow='28'] .tooltip:before {
+	content: "28%";}
+  .bar[aria-valuenow='29'] .tooltip {
+	left: 29%;}
+  .bar[aria-valuenow='29'] .tooltip:before {
+	content: "29%";}
+  .bar[aria-valuenow='30'] .tooltip {
+	left: 30%;}
+  .bar[aria-valuenow='30'] .tooltip:before {
+	content: "30%";}
+  .bar[aria-valuenow='31'] .tooltip {
+	left: 31%;}
+  .bar[aria-valuenow='31'] .tooltip:before {
+	content: "31%";}
+  .bar[aria-valuenow='32'] .tooltip {
+	left: 32%;}
+  .bar[aria-valuenow='32'] .tooltip:before {
+	content: "32%";}
+  .bar[aria-valuenow='33'] .tooltip {
+	left: 33%;}
+  .bar[aria-valuenow='33'] .tooltip:before {
+	content: "33%";}
+  .bar[aria-valuenow='34'] .tooltip {
+	left: 34%;}
+  .bar[aria-valuenow='34'] .tooltip:before {
+	content: "34%";}
+  .bar[aria-valuenow='35'] .tooltip {
+	left: 35%;}
+  .bar[aria-valuenow='35'] .tooltip:before {
+	content: "35%";}
+  .bar[aria-valuenow='36'] .tooltip {
+	left: 36%;}
+  .bar[aria-valuenow='36'] .tooltip:before {
+	content: "36%";}
+  .bar[aria-valuenow='37'] .tooltip {
+	left: 37%;}
+  .bar[aria-valuenow='37'] .tooltip:before {
+	content: "37%";}
+  .bar[aria-valuenow='38'] .tooltip {
+	left: 38%;}
+  .bar[aria-valuenow='38'] .tooltip:before {
+	content: "38%";}
+  .bar[aria-valuenow='39'] .tooltip {
+	left: 39%;}
+  .bar[aria-valuenow='39'] .tooltip:before {
+	content: "39%";}
+  .bar[aria-valuenow='40'] .tooltip {
+	left: 40%;}
+  .bar[aria-valuenow='40'] .tooltip:before {
+	content: "40%";}
+  .bar[aria-valuenow='41'] .tooltip {
+	left: 41%;}
+  .bar[aria-valuenow='41'] .tooltip:before {
+	content: "41%";}
+  .bar[aria-valuenow='42'] .tooltip {
+	left: 42%;}
+  .bar[aria-valuenow='42'] .tooltip:before {
+	content: "42%";}
+  .bar[aria-valuenow='43'] .tooltip {
+	left: 43%;}
+  .bar[aria-valuenow='43'] .tooltip:before {
+	content: "43%";}
+  .bar[aria-valuenow='44'] .tooltip {
+	left: 44%;}
+  .bar[aria-valuenow='44'] .tooltip:before {
+	content: "44%";}
+  .bar[aria-valuenow='45'] .tooltip {
+	left: 45%;}
+  .bar[aria-valuenow='45'] .tooltip:before {
+	content: "45%";}
+  .bar[aria-valuenow='46'] .tooltip {
+	left: 46%;}
+  .bar[aria-valuenow='46'] .tooltip:before {
+	content: "46%";}
+  .bar[aria-valuenow='47'] .tooltip {
+	left: 47%;}
+  .bar[aria-valuenow='47'] .tooltip:before {
+	content: "47%";}
+  .bar[aria-valuenow='48'] .tooltip {
+	left: 48%;}
+  .bar[aria-valuenow='48'] .tooltip:before {
+	content: "48%";}
+  .bar[aria-valuenow='49'] .tooltip {
+	left: 49%;}
+  .bar[aria-valuenow='49'] .tooltip:before {
+	content: "49%";}
+  .bar[aria-valuenow='50'] .tooltip {
+	left: 50%;}
+  .bar[aria-valuenow='50'] .tooltip:before {
+	content: "50%";}
+  .bar[aria-valuenow='51'] .tooltip {
+	left: 51%;}
+  .bar[aria-valuenow='51'] .tooltip:before {
+	content: "51%";}
+  .bar[aria-valuenow='52'] .tooltip {
+	left: 52%;}
+  .bar[aria-valuenow='52'] .tooltip:before {
+	content: "52%";}
+  .bar[aria-valuenow='53'] .tooltip {
+	left: 53%;}
+  .bar[aria-valuenow='53'] .tooltip:before {
+	content: "53%";}
+  .bar[aria-valuenow='54'] .tooltip {
+	left: 54%;}
+  .bar[aria-valuenow='54'] .tooltip:before {
+	content: "54%";}
+  .bar[aria-valuenow='55'] .tooltip {
+	left: 55%;}
+  .bar[aria-valuenow='55'] .tooltip:before {
+	content: "55%";}
+  .bar[aria-valuenow='56'] .tooltip {
+	left: 56%;}
+  .bar[aria-valuenow='56'] .tooltip:before {
+	content: "56%";}
+  .bar[aria-valuenow='57'] .tooltip {
+	left: 57%;}
+  .bar[aria-valuenow='57'] .tooltip:before {
+	content: "57%";}
+  .bar[aria-valuenow='58'] .tooltip {
+	left: 58%;}
+  .bar[aria-valuenow='58'] .tooltip:before {
+	content: "58%";}
+  .bar[aria-valuenow='59'] .tooltip {
+	left: 59%;}
+  .bar[aria-valuenow='59'] .tooltip:before {
+	content: "59%";}
+  .bar[aria-valuenow='60'] .tooltip {
+	left: 60%;}
+  .bar[aria-valuenow='60'] .tooltip:before {
+	content: "60%";}
+  .bar[aria-valuenow='61'] .tooltip {
+	left: 61%;}
+  .bar[aria-valuenow='61'] .tooltip:before {
+	content: "61%";}
+  .bar[aria-valuenow='62'] .tooltip {
+	left: 62%;}
+  .bar[aria-valuenow='62'] .tooltip:before {
+	content: "62%";}
+  .bar[aria-valuenow='63'] .tooltip {
+	left: 63%;}
+  .bar[aria-valuenow='63'] .tooltip:before {
+	content: "63%";}
+  .bar[aria-valuenow='64'] .tooltip {
+	left: 64%;}
+  .bar[aria-valuenow='64'] .tooltip:before {
+	content: "64%";}
+  .bar[aria-valuenow='65'] .tooltip {
+	left: 65%;}
+  .bar[aria-valuenow='65'] .tooltip:before {
+	content: "65%";}
+  .bar[aria-valuenow='66'] .tooltip {
+	left: 66%;}
+  .bar[aria-valuenow='66'] .tooltip:before {
+	content: "66%";}
+  .bar[aria-valuenow='67'] .tooltip {
+	left: 67%;}
+  .bar[aria-valuenow='67'] .tooltip:before {
+	content: "67%";}
+  .bar[aria-valuenow='68'] .tooltip {
+	left: 68%;}
+  .bar[aria-valuenow='68'] .tooltip:before {
+	content: "68%";}
+  .bar[aria-valuenow='69'] .tooltip {
+	left: 69%;}
+  .bar[aria-valuenow='69'] .tooltip:before {
+	content: "69%";}
+  .bar[aria-valuenow='70'] .tooltip {
+	left: 70%;}
+  .bar[aria-valuenow='70'] .tooltip:before {
+	content: "70%";}
+  .bar[aria-valuenow='71'] .tooltip {
+	left: 71%;}
+  .bar[aria-valuenow='71'] .tooltip:before {
+	content: "71%";}
+  .bar[aria-valuenow='72'] .tooltip {
+	left: 72%;}
+  .bar[aria-valuenow='72'] .tooltip:before {
+	content: "72%";}
+  .bar[aria-valuenow='73'] .tooltip {
+	left: 73%;}
+  .bar[aria-valuenow='73'] .tooltip:before {
+	content: "73%";}
+  .bar[aria-valuenow='74'] .tooltip {
+	left: 74%;}
+  .bar[aria-valuenow='74'] .tooltip:before {
+	content: "74%";}
+  .bar[aria-valuenow='75'] .tooltip {
+	left: 75%;}
+  .bar[aria-valuenow='75'] .tooltip:before {
+	content: "75%";}
+  .bar[aria-valuenow='76'] .tooltip {
+	left: 76%;}
+  .bar[aria-valuenow='76'] .tooltip:before {
+	content: "76%";}
+  .bar[aria-valuenow='77'] .tooltip {
+	left: 77%;}
+  .bar[aria-valuenow='77'] .tooltip:before {
+	content: "77%";}
+  .bar[aria-valuenow='78'] .tooltip {
+	left: 78%;}
+  .bar[aria-valuenow='78'] .tooltip:before {
+	content: "78%";}
+  .bar[aria-valuenow='79'] .tooltip {
+	left: 79%;}
+  .bar[aria-valuenow='79'] .tooltip:before {
+	content: "79%";}
+  .bar[aria-valuenow='80'] .tooltip {
+	left: 80%;}
+  .bar[aria-valuenow='80'] .tooltip:before {
+	content: "80%";}
+  .bar[aria-valuenow='81'] .tooltip {
+	left: 81%;}
+  .bar[aria-valuenow='81'] .tooltip:before {
+	content: "81%";}
+  .bar[aria-valuenow='82'] .tooltip {
+	left: 82%;}
+  .bar[aria-valuenow='82'] .tooltip:before {
+	content: "82%";}
+  .bar[aria-valuenow='83'] .tooltip {
+	left: 83%;}
+  .bar[aria-valuenow='83'] .tooltip:before {
+	content: "83%";}
+  .bar[aria-valuenow='84'] .tooltip {
+	left: 84%;}
+  .bar[aria-valuenow='84'] .tooltip:before {
+	content: "84%";}
+  .bar[aria-valuenow='85'] .tooltip {
+	left: 85%;}
+  .bar[aria-valuenow='85'] .tooltip:before {
+	content: "85%";}
+  .bar[aria-valuenow='86'] .tooltip {
+	left: 86%;}
+  .bar[aria-valuenow='86'] .tooltip:before {
+	content: "86%";}
+  .bar[aria-valuenow='87'] .tooltip {
+	left: 87%;}
+  .bar[aria-valuenow='87'] .tooltip:before {
+	content: "87%";}
+  .bar[aria-valuenow='88'] .tooltip {
+	left: 88%;}
+  .bar[aria-valuenow='88'] .tooltip:before {
+	content: "88%";}
+  .bar[aria-valuenow='89'] .tooltip {
+	left: 89%;}
+  .bar[aria-valuenow='89'] .tooltip:before {
+	content: "89%";}
+  .bar[aria-valuenow='90'] .tooltip {
+	left: 90%;}
+  .bar[aria-valuenow='90'] .tooltip:before {
+	content: "90%";}
+  .bar[aria-valuenow='91'] .tooltip {
+	left: 91%;}
+  .bar[aria-valuenow='91'] .tooltip:before {
+	content: "91%";}
+  .bar[aria-valuenow='92'] .tooltip {
+	left: 92%;}
+  .bar[aria-valuenow='92'] .tooltip:before {
+	content: "92%";}
+  .bar[aria-valuenow='93'] .tooltip {
+	left: 93%;}
+  .bar[aria-valuenow='93'] .tooltip:before {
+	content: "93%";}
+  .bar[aria-valuenow='94'] .tooltip {
+	left: 94%;}
+  .bar[aria-valuenow='94'] .tooltip:before {
+	content: "94%";}
+  .bar[aria-valuenow='95'] .tooltip {
+	left: 95%;}
+  .bar[aria-valuenow='95'] .tooltip:before {
+	content: "95%";}
+  .bar[aria-valuenow='96'] .tooltip {
+	left: 96%;}
+  .bar[aria-valuenow='96'] .tooltip:before {
+	content: "96%";
+  }.bar[aria-valuenow='97'] .tooltip {
+	left: 97%;}
+  .bar[aria-valuenow='97'] .tooltip:before {
+	content: "97%";}
+  .bar[aria-valuenow='98'] .tooltip {
+	left: 98%;}
+  .bar[aria-valuenow='98'] .tooltip:before {
+	content: "98%";}
+  .bar[aria-valuenow='99'] .tooltip {
+	left: 99%;}
+  .bar[aria-valuenow='99'] .tooltip:before {
+	content: "99%";}
+  .bar[aria-valuenow='100'] .tooltip {
+	left: 100%;}
+  .bar[aria-valuenow='100'] .tooltip:before {
+	content: "100%";}
+  
