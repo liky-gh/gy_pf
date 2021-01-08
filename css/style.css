@@ -304,11 +304,13 @@ input[type='checkbox']:checked ~ .flexy-column .bar4 .bar[aria-valuenow] .toolti
 
 
 #pr{height: 1000px; padding: 70px 0 120px;}
+.prset{}
 #pr h3{font-size: 30px;font-family:'Bungee', cursive;  padding: 55px 0 10px;}
 #pr .pr1{float: left; width: 49%;
-  height: 800px; background: #fbf9f8;}
+  height: 380px; background: #fbf9f8;}
 #pr .pr2{float: right; width: 49%;
-  height: 800px; background: #e0f5ec;}
+  height: 380px; background: #e0f5ec;}
+#pr .pr3{height: 380px; background: #fcf8ff; margin-top: 35px;}
 
 
 .footer .topbt{
