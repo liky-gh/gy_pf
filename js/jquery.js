@@ -32,12 +32,9 @@ $(".prbt").on("click",function(){
 })
 
 $(".aebt").on("click",function(){
-    $("body,html").animate({scrollTop:"2635px"},750);
+    $("body,html").animate({scrollTop:"2935px"},750);
 })
 
-$(".webbt").on("click",function(){
-    $("body,html").animate({scrollTop:"3630px"},750);
-})
 
 
 
