@@ -376,7 +376,7 @@ input[type='checkbox']:checked ~ .flexy-column .bar4 .bar[aria-valuenow] .toolti
   text-align: center;
 }
 .menu li:hover a {
-  color: crimson;
+  color: rgb(0, 0, 0);
   opacity: 1;
 }
 .menu li:hover span.slogan {
@@ -393,7 +393,8 @@ input[type='checkbox']:checked ~ .flexy-column .bar4 .bar[aria-valuenow] .toolti
   display: block;
   padding: 0 3rem 3rem;
   font-size: 4.5rem;
-  color: #4a4a4a;
+  color: #fff;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
   text-decoration: none;
   font-family: 'Anton', sans-serif;
   text-transform: uppercase;
