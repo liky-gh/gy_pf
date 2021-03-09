@@ -37,7 +37,7 @@ let sites = [
 	{
 		'title': 'Toy Story',
 		'slogan': 'Hobby videos',
-		'url': 'https://google.com',
+		'url': 'https://naver.com',
 		'image': './img/toy_.jpg',
 	}, {
 		'title': 'Lake Park',

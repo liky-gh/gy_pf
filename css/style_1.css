@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+/* reset element */
+*{ margin: 0;  padding: 0; box-sizing: border-box;}
+*:focus {  outline:none }
+
+
+h1,h2,h3,h4,h5,h6 { font-weight: normal;}
+
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {  display: block;}
+img {  vertical-align: middle;  border: none;}
+table {  border-collapse: collapse;  table-layout: fixed;  width: 100%;}
+ul,ol,li {  list-style: none;}
+address,
+em {  font-style: normal;}
+a {  text-decoration: none;  color: inherit;}
+
+/* 건너뛰기 링크(접근성) */
+.skipnav a {
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  z-index: 99999999999;}
+.skipnav a:focus,
+.skipnav a:active {
+  position: relative;  width: 100%;  height: auto;  padding: 10px;}
+/* 비장애인들한테는 보일 필요가 없는 컨텐츠이지만, 장애인들한테는 인식돼야 할 컨텐츠에 붙이는 클래스 */
+.blind {  font-size: 0;  width: 0;  height: 0;  line-height: 0;  text-indent: -9999px;  overflow: hidden;
+  visibility: hidden;  position: absolute;  top: 0;  left: 0;}
+  /* 테이블의 제목과 폼의 그룹화 요소는 안보이게 처리함 */
+caption,
+legend {  display: none}
+
+fieldset{border: none;}
+
+input[type='submit']:hover,
+input[type='reset']:hover,
+button:hover{cursor: pointer;}
+
+input,select{vertical-align: middle;}
+
+/* 자식들이 float 속성을 가질때 부모의 높이가 무너지므로 .cf로 해결함 */
+.cf:after,
+.cf:before {  content: "";  display: block;  clear: both;}
+
+
+/************************************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap',
+'https://fonts.googleapis.com/css2?family=Lilita+One&display=swap',
+'https://fonts.googleapis.com/css2?family=Paytone+One&display=swap',
+'https://fonts.googleapis.com/css2?family=Monoton&display=swap',
+'https://fonts.googleapis.com/css2?family=Faster+One&display=swap',
+'https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap',
+'https://fonts.googleapis.com/css2?family=Coiny&display=swap',
+'https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300&display=swap');
+/* font-family: 'Coiny', cursive; */
+/* font-family: 'Bungee Shade', cursive; */
+/* font-family: 'Faster One', cursive; */
+/* font-family: 'Monoton', cursive; */
+/* font-family: 'Paytone One', sans-serif; */
+/* font-family: 'Lilita One', cursive; */
+/* font-family: 'Bungee', cursive; */
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+#full{width: 100%;}
+#detail h3{
+  font-size: 30px;font-family:'Bungee', cursive; 
+  padding: 50px 0 30px; text-align: center; color: #000000;}
+#detail .youtube{
+  width:70%; height: 700px; background: #000000; margin: 0 auto; 
+  position: relative; border-radius: 50px 0 50px 0;}
+#detail iframe{ width: 90%; height: 80%; border-radius: 25px;
+  position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);}
+.dp{color: rgb(114, 114, 114);}
+
+  /* zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz */
+

@@ -564,16 +564,7 @@ input[type='checkbox']:checked ~ .flexy-column .bar4 .bar[aria-valuenow] .toolti
  }
 
 
-  /* zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz */
 
-#detail h3{font-size: 30px;font-family:'Bungee', cursive; padding: 0px 0 30px; text-align: center; color: #28a2ee;}
-#detail .youtube{
-  width:70%; height: 700px; background: #000000; margin: 0 auto; 
-  position: relative; border-radius: 50px 0 50px 0;}
-#detail iframe{ width: 90%; height: 80%; border-radius: 25px;
-  position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);}
-
-  /* zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz */
 
 
 
