@@ -159,13 +159,15 @@ section #home .hfont p{
   left: 50%; transform: translateX(-50%);
   position: relative;  display: inline-block;  margin: 4em 0 2.5em 0;
   font-size: 1em;  font-weight: bold;  line-height: 1em;  padding: 1em; 
-  color: rgb(0, 0, 0);  transition: all 0.5s;
-  border: 1.8px solid #000;
+  color: #fff;background: #176ae5;  
+  transition: all 0.5s;
+  border: 1.8px solid #f9efe4; 
   /* background-color: #176ae5;   */
   border-radius: 25px;}
 
-.value-label:hover{background: #176ae5;  color: #fff;
-  border: 1.8px solid #f9efe4; }
+.value-label:hover{background: none;
+  color: rgb(0, 0, 0);  
+  border: 1.8px solid #000;}
 
 /* bar1 */
 input[type='checkbox']:checked ~ .flexy-column .bar1 .bar[aria-valuenow] .percentage:before {
@@ -384,7 +386,8 @@ input[type='checkbox']:checked ~ .flexy-column .bar4 .bar[aria-valuenow] .toolti
   opacity: 1;
 }
 .menu li.active a {
-  color:#595959;
+  color:#2c57ce;
+  
 }
 .menu li.active span.slogan {
   color: #4a4a4a;
@@ -402,6 +405,7 @@ input[type='checkbox']:checked ~ .flexy-column .bar4 .bar[aria-valuenow] .toolti
   letter-spacing: .04em;
   -webkit-transition: color .25s ease, opacity .25s ease;
   transition: color .25s ease, opacity .25s ease;
+
 }
 .menu li span.slogan {
   font-family: 'Kaushan Script', cursive;
@@ -487,13 +491,13 @@ input[type='checkbox']:checked ~ .flexy-column .bar4 .bar[aria-valuenow] .toolti
 #section3{width: 60%; margin: 0 auto;}
 #ae{padding-bottom: 05px;}
 #ae h3{font-size: 2rem;font-family:'Bungee', cursive; padding: 120px 0 50px; text-align: center;}
-#ae .ae1{float: left; width: 48.5%;position: relative;
+#ae .ae1{float: left; width: 48.4%;position: relative;
   height: 380px;}
-#ae .ae2{float: right; width: 48.5%;position: relative;
+#ae .ae2{float: right; width: 48.4%;position: relative;
   height: 380px;}
-#ae .ae3{float: left; width: 48.5%;position: relative;
+#ae .ae3{float: left; width: 48.4%;position: relative;
   height: 380px;margin-top: 30px;}
-#ae .ae4{float: right; width: 48.5%;position: relative;
+#ae .ae4{float: right; width: 48.4%;position: relative;
   height: 380px; margin-top: 30px;}
 
 #ae img{height: 100%; transition: all 0.5s;}
@@ -511,7 +515,7 @@ input[type='checkbox']:checked ~ .flexy-column .bar4 .bar[aria-valuenow] .toolti
 .ae2:hover .pra img,
 .ae3:hover .pra img,
 .ae4:hover .pra img{
-  transform: scale(1.01); opacity: 0.95; }
+  transform: scale(1.02); ; }
 
     
   .ae1:hover .post{transform: rotate(2deg); }
@@ -521,7 +525,7 @@ input[type='checkbox']:checked ~ .flexy-column .bar4 .bar[aria-valuenow] .toolti
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgb(248, 226, 186);}
+    background: rgb(0, 150, 130);}
   .ae2:hover .post{transform: rotate(2deg); }
   .ae2 .post{   
       position: absolute;transition: 0.5s;
@@ -529,7 +533,7 @@ input[type='checkbox']:checked ~ .flexy-column .bar4 .bar[aria-valuenow] .toolti
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgb(139, 125, 143);}
+      background: rgb(156, 72, 66);}
   .ae3:hover .post{transform: rotate(2deg); }
   .ae3 .post{   
         position: absolute;transition: 0.5s;
@@ -537,7 +541,7 @@ input[type='checkbox']:checked ~ .flexy-column .bar4 .bar[aria-valuenow] .toolti
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgb(76, 117, 96);}
+        background: rgb(235, 228, 188);}
   .ae4:hover .post{transform: rotate(2deg); }
   .ae4 .post{   
           position: absolute;transition: 0.5s;
@@ -545,7 +549,7 @@ input[type='checkbox']:checked ~ .flexy-column .bar4 .bar[aria-valuenow] .toolti
           left: 0;
           right: 0;
           bottom: 0;
-          background: rgb(189, 181, 140);}
+          background: rgb(145, 142, 179);}
 
 
 

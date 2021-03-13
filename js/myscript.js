@@ -37,23 +37,23 @@ let sites = [
 	{
 		'title': 'Toy Story',
 		'slogan': 'Hobby videos',
-		'url': 'https://naver.com',
-		'image': './img/toy_.jpg',
+		'url': './video_toystory.html',
+		'image': './img/Toystory_img.jpg',
 	}, {
 		'title': 'Lake Park',
 		'slogan': 'Promotional video',
-		'url': 'https://google.com',
-		'image': 'https://images.unsplash.com/photo-1565728772631-a3d6acd57849?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80',
+		'url': './video_ch.html',
+		'image': './img/park_img.jpg',
 	}, {
 		'title': 'Vlog',
 		'slogan': 'Flower Market Vlog',
-		'url': 'https://google.com',
-		'image': 'https://images.unsplash.com/photo-1565623513508-ffe2588e327c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80',
+		'url': './video_vlog.html',
+		'image': './img/vlog_img.jpg',
 	}, {
-		'title': 'The Art of Food',
-		'slogan': 'Lorem ipsum dolor',
-		'url': 'https://google.com',
-		'image': 'https://images.unsplash.com/photo-1565676137134-10420000e371?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80',
+		'title': 'mamonde',
+		'slogan': 'Rose Water Toner',
+		'url': './video_ma.html',
+		'image': './img/RoseToner_img.jpg',
 	},
 ];
 
@@ -104,4 +104,4 @@ $(menu).on('mouseover', function() {
 
 
 $('.menu li:nth-child(3)').addClass('active');
-$('a').on('click', function(e) {e.preventDefault()});
+// $('a').on('click', function(e) {e.preventDefault()});
