@@ -81,6 +81,7 @@ input,select{vertical-align: middle;}
   position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);}
 .dp{color: rgb(114, 114, 114);}
 
+.dp{color: rgb(114, 114, 114);}
 
 #detail1 h3{
   font-size: 30px;font-family:'Bungee', cursive; 
@@ -91,6 +92,8 @@ input,select{vertical-align: middle;}
 #detail1 iframe{ width: 90%; height: 80%; border-radius: 25px;
   position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);}
 .dp1{color: rgb(114, 114, 114);}
+#detail1 .vid{
+  position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);}
 
   /* zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz */
 

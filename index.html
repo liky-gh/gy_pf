@@ -69,12 +69,21 @@
                         <p>안녕하세요. 이가영의 포트폴리오 사이트에 방문해주셔서 감사합니다.</p>
                     </div>
                     <div class="himg">
-                        <img src="../gy_pf/img/mo2.jpg" alt="">
+                        <img src="img/mo2.jpg" alt="">
                     </div>
-                    <div class="hyt">
-                        <iframe width="575" height="360" src="https://www.youtube.com/embed/N9sZWszfP0s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    
-
-                    </div>  
+                    <figure class="hyt">
+                        <video autoplay muted loop  preload="auto" poster="" width="800px"> 
+                            <!--  <video src="images/nike.mp4">   -->
+                            <!--  크롬브라우저에서는 음소거를 해주어야만 자동재생가능<video autoplay muted> -->
+                            <!-- autoplay: 자동재생 
+                                    muted: 음소거
+                                    loop:반복재생 
+                                    controls: 컨트롤러생성 
+                                    preload:영상파일로드여부(기본값  preload:auto) 
+                                    poster:자동재생이 아닐때 이미지 표시(경로설정), 동영상과 같은 크기의 이미지 준비 -->
+                            <source src="img/gayoung.mp4" type="video/mp4">
+                        </video>
+                    </figure>
 
                 </div>
             </div>
@@ -186,7 +195,7 @@
 
 
 
-            <div id="section2">
+            <div id="section2">     
                     <div class="menu-wrap">
                         <div class="sh">
                             <h3 id="prchek">VIDEO EDITING</h3>   

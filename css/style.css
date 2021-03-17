@@ -93,12 +93,17 @@ header .menu_1 .menubar li:hover{
   transition:all 0.2s;}
 
 
+
+ 
+  
+
 #section{width: 90%;margin: 0 auto;}
 #section1{width: 100%;margin: 0 auto;}
 section #home {height: 800px; text-align: center;  position: relative; background-color: #f9efe4; overflow: hidden;}
-section #home .hfont{position: absolute; top:15%; left: 50%; transform: translate(-50%,-50%); z-index: 9999;}
-section #home .himg{position: absolute; top:70%; left: 50%; transform: translate(-50%,-50%);}
-section #home .hyt{position: absolute; top:62%; left: 49.5%; transform: translate(-50%,-50%);}
+section #home .hfont{position: absolute; top:12%; left: 50%; transform: translate(-50%,-50%); z-index: 9999;}
+section #home .himg{position: absolute; top:68%; left: 51.5%; transform: translate(-50%,-50%);}
+section #home .hyt{
+  position: absolute; top:62%; left: 49.5%; transform: translate(-50%,-50%);}
 section #home .hfont h2{font-size: 70px; font-family: 'a장미다방', cursive; }
 section #home .hfont p{
   padding-top: 20px;
